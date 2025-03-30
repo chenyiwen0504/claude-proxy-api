@@ -57,7 +57,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: model || 'claude-3-haiku-20240307',
         messages: messages,
-        system: system || '',
+        system: system,
         max_tokens: maxTokens || 4000,
         temperature: temperature || 0.7
       })
